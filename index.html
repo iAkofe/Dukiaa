@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dukia - Real Estate Services</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -34,8 +38,12 @@
           understanding that you can own a house we will use it.
         </p>
         <div class="hero-actions">
-          <button class="btn btn-dark">Join Waitlist</button>
-          <button class="btn btn-outline">Learn More</button>
+          <button class="btn btn-dark">
+            Join Waitlist  <span style="margin-left: 2px; font-size: 10px;">↗</span>
+          </button>
+          <button class="btn btn-outline">
+            Learn More <i class="fa-solid fa-angle-right"></i>
+          </button>
         </div>
       </div>
       <div class="hero-visual">
@@ -61,21 +69,21 @@
           <h3>For Renters</h3>
           <p>Find verified rental spaces near you.</p>
         </div>
-        <a class="service-link" href="#">Start your search</a>
+        <a class="service-link" href="#">Start your search <span style="margin-left: 2px; font-size: 10px;">↗</span></a>
       </div>
       <div class="service">
         <div>
           <h3>For Homeowners</h3>
           <p>List your property easily and securely.</p>
         </div>
-        <a class="service-link" href="#">List your property today</a>
+        <a class="service-link" href="#">List your property today <span style="margin-left: 2px; font-size: 10px;">↗</span></a>
       </div>
       <div class="service">
         <div>
           <h3>Professional Real Estate Services</h3>
           <p>Connect with the best real estate pros.</p>
         </div>
-        <a class="service-link" href="#">Find a professional</a>
+        <a class="service-link" href="#">Find a professional <span style="margin-left: 2px; font-size: 10px;">↗</span></a>
       </div>
     </div>
   </section>
@@ -87,15 +95,15 @@
         <div class="steps">
           <div class="step step-yellow">
             <h4>Sign Up</h4>
-            <p>Create your account in minutes and start exploring.</p>
+            <p>Create your account in minutes and choose the path that fits your needs; renting, selling, or professional services.</p>
           </div>
           <div class="step step-purple">
             <h4>Search &amp; List</h4>
-            <p>Browse our listings or add your property easily.</p>
+            <p>Use our intuitive tools to find your ideal space or showcase your property.</p>
           </div>
           <div class="step step-green">
             <h4>Connect &amp; Close</h4>
-            <p>Chat with verified agents and close your deal.</p>
+            <p>Communicate directly with renters, buyers, or real estate professionals and complete your transaction effortlessly.</p>
           </div>
         </div>
       </div>
@@ -114,12 +122,12 @@
     <div class="container choose-grid">
       <div class="choose-card choose-green">
         <h3>Verified Listings</h3>
-        <p>Enjoy access to reliable listings with trusted agents.</p>
+        <p>Every property and professional on our platform is thoroughly vetted for quality and reliability.</p>
         <img src="assets/2329 copy.svg" alt="Verified" />
       </div>
       <div class="choose-card choose-cream">
-        <h3>User-Friendly<br />Experience</h3>
-        <p>We make searching and listing straightforward.</p>
+        <h3>User-Friendly <br/>Experience</h3>
+        <p>Our clean, minimal design ensures you find what you need without any hassle.</p>
         <img src="assets/user 1.svg" alt="User" />
       </div>
     </div>
@@ -130,37 +138,97 @@
       <div class="testimonials-text">
         <h2>What others are<br />saying about Us</h2>
         <p>
-          Our clients love the ease, speed, and trust they get with Dukia. We
-          keep it simple and professional.
+          Join our hundreds of clients embracing a smarter way to find and list
+          property with Dukia.
         </p>
-        <div class="stars">★★★★★</div>
-      </div>
-      <div class="testimonials-cards">
-        <div class="testimonial-card green">
-          <img class="avatar" src="assets/testimonial1.png" alt="Stripe" />
-          <div>
-            <h4>Stripe</h4>
-            <p>
-              \"Simple, seamless, and professional. Finding our new space felt
-              effortless.\"
-            </p>
-          </div>
-        </div>
-        <div class="testimonial-card blue">
-          <img class="avatar" src="assets/testimonial2.png" alt="Kellen" />
-          <div>
-            <h4>Kellen</h4>
-            <p>
-              \"The listings are verified and the service is super responsive.\"
-            </p>
-          </div>
+        <div class="trust">
+          <div class="stars">★★★★★</div>
+          <span>Review from Trustpilot</span>
         </div>
       </div>
-    </div>
-    <div class="dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+      <div class="testimonials-carousel" data-carousel>
+        <button class="carousel-btn prev" aria-label="Previous testimonial">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <article class="testimonial-card green">
+              <img class="avatar" src="assets/testimonial1.png" alt="Stripe" />
+              <div class="testimonial-content">
+                <h4>Stripe</h4>
+                <p>
+                  “Simple, seamless processing. Payroll reduces the number of
+                  third parties we work with.”
+                </p>
+                <div class="testimonial-footer">
+                  <span>Anton de Swardt</span>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card cream">
+              <img class="avatar" src="assets/testimonial2.png" alt="Kellen" />
+              <div class="testimonial-content">
+                <h4>Kellen</h4>
+                <p>
+                  “The listings are verified and the service is super responsive.
+                  We closed quickly.”
+                </p>
+                <div class="testimonial-footer">
+                  <span>Ruth M.</span>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card green">
+              <img class="avatar" src="assets/testimonial1.png" alt="Lucian" />
+              <div class="testimonial-content">
+                <h4>Lucian</h4>
+                <p>
+                  “Transparent pricing and an easy process. Found a perfect
+                  rental in days.”
+                </p>
+                <div class="testimonial-footer">
+                  <span>Amaka O.</span>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card cream">
+              <img class="avatar" src="assets/testimonial2.png" alt="Anita" />
+              <div class="testimonial-content">
+                <h4>Anita</h4>
+                <p>
+                  “Friendly agents and clean listings. The experience feels
+                  premium and safe.”
+                </p>
+                <div class="testimonial-footer">
+                  <span>Olu A.</span>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </article>
+            <article class="testimonial-card green">
+              <img class="avatar" src="assets/testimonial1.png" alt="Juno" />
+              <div class="testimonial-content">
+                <h4>Juno</h4>
+                <p>
+                  “Great support from start to finish. We listed our home and
+                  got qualified leads fast.”
+                </p>
+                <div class="testimonial-footer">
+                  <span>Segun T.</span>
+                  <div class="stars">★★★★★</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="carousel-btn next" aria-label="Next testimonial">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="carousel-dots" aria-label="Testimonial pagination"></div>
+      </div>
     </div>
   </section>
 
@@ -195,8 +263,8 @@
 
   <section class="cta">
     <div class="container cta-box">
-      <h2>Whether you’re searching for your next home, looking to list your property,<br />or in need of expert advice</h2>
-      <p>Let us help you get started in just a few steps.</p>
+      <h2>Whether you’re searching for your next home, looking to list your property, or in need of expert advice</h2>
+      <p>Dukia is here to guide you every step of the way.</p>
       <button class="btn btn-dark">Get started</button>
     </div>
   </section>
@@ -206,15 +274,24 @@
       <div class="footer-brand">
         <img src="assets/DukiaAsset 2 1.png" alt="Dukia" />
       </div>
-      <div class="footer-links">
-        <a href="#">Home</a>
-        <a href="#about">About us</a>
-        <a href="#services">Product and services</a>
-        <a href="#">FAQ</a>
+      <div class="footer-center">
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#about">About us</a>
+          <a href="#services">Product & Services</a>
+          <a href="#">FAQs</a>
+        </div>
+        <div class="footer-contact">
+          <p>info@dukia.com</p>
+          <p>(505)555-0125</p>
+        </div>
       </div>
-      <div class="footer-contact">
-        <h4>Reach out</h4>
-        <p>support@dukia.com</p>
+      <div class="footer-newsletter">
+        <h4>Newsletter</h4>
+        <label class="footer-input">
+          <span>Enter your email address</span>
+          <input type="email" placeholder="" />
+        </label>
       </div>
     </div>
   </footer>
@@ -226,6 +303,74 @@
         item.classList.toggle('open');
       });
     });
+
+    const carousel = document.querySelector('[data-carousel]');
+    if (carousel) {
+      const track = carousel.querySelector('.carousel-track');
+      const prevBtn = carousel.querySelector('.carousel-btn.prev');
+      const nextBtn = carousel.querySelector('.carousel-btn.next');
+      const dotsWrap = carousel.querySelector('.carousel-dots');
+      const originals = Array.from(track.children);
+      const firstClone = originals[0].cloneNode(true);
+      const lastClone = originals[originals.length - 1].cloneNode(true);
+      track.appendChild(firstClone);
+      track.insertBefore(lastClone, originals[0]);
+
+      const slides = Array.from(track.children);
+      let index = 1;
+      let isTransitioning = false;
+
+      originals.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot';
+        dot.setAttribute('aria-label', `Go to testimonial ${i + 1}`);
+        dot.addEventListener('click', () => goTo(i + 1));
+        dotsWrap.appendChild(dot);
+      });
+
+      const dots = Array.from(dotsWrap.children);
+
+      function slideWidth() {
+        const cardWidth = slides[0].getBoundingClientRect().width;
+        const gap = parseFloat(getComputedStyle(track).gap || 0);
+        return { cardWidth, gap };
+      }
+
+      function update(animate = true) {
+        const { cardWidth, gap } = slideWidth();
+        const offset = (cardWidth + gap) * index;
+        track.style.transition = animate ? 'transform 0.4s ease' : 'none';
+        track.style.transform = `translateX(-${offset}px)`;
+        const realIndex = (index - 1 + originals.length) % originals.length;
+        dots.forEach((dot, i) => {
+          dot.classList.toggle('active', i === realIndex);
+        });
+      }
+
+      function goTo(i) {
+        if (isTransitioning) return;
+        index = i;
+        update(true);
+        isTransitioning = true;
+      }
+
+      track.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        if (index === 0) {
+          index = originals.length;
+          update(false);
+        }
+        if (index === slides.length - 1) {
+          index = 1;
+          update(false);
+        }
+      });
+
+      prevBtn.addEventListener('click', () => goTo(index - 1));
+      nextBtn.addEventListener('click', () => goTo(index + 1));
+      window.addEventListener('resize', () => update(false));
+      update(false);
+    }
   </script>
 </body>
 </html>
